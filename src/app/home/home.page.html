@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      QRCode Example
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">QRCode Example</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button color="primary" (click)="scanQrCode()">Scan qrcode
+      <ion-icon size="small" name="qr-code-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,17 @@
+{
+  "appId": "com.qrcodexample.app",
+  "appName": "qrcodeExample",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.2.163:8100",
+    "cleartext": true
+  }
+}
