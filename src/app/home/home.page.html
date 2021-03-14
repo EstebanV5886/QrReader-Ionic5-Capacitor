@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
       QRCode Example
@@ -14,8 +14,19 @@
   </ion-header>
 
   <div id="container">
-    <ion-button color="primary" (click)="scanQrCode()">Scan qrcode
+    <ion-button class="btn" expand="block" shape="round" color="danger" (click)="scanQrCode()">Scan Qrcode
       <ion-icon size="small" name="qr-code-outline"></ion-icon>
     </ion-button>
+    <div>
+      <ion-card *ngIf="qrResult">
+        <ion-card-header>
+          <ion-card-title>Qr Content</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{qrResult}}
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { QrcodeService } from '../services/qrcode.service';
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -8,11 +7,13 @@ import { QrcodeService } from '../services/qrcode.service';
 })
 export class HomePage {
 
+  qrResult: any;
+
   constructor(private qrcode: QrcodeService) { }
 
   async scanQrCode() {
-    this.qrcode.scanQr().then(result => {
-      console.log('result: ', result);
+    this.qrcode.scanQr().then((result: any) => {
+      this.qrResult = result.code;
     }).catch(error => console.error(error));
   }
 

@@ -1,5 +1,12 @@
+ion-header {
+  ion-toolbar{
+    --background: #A5C4D4 !important;
+    --color: whitesmoke !important;
+  }
+}
+
 ion-content {
-  --background: cadetblue !important;
+  --background: #586F89 !important;
 }
 
 #container {
@@ -10,6 +17,27 @@ ion-content {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  .btn {
+    height: 50px;
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  ion-card{
+    margin-top: 20px;
+    ion-card-header {
+      --background: #485A70 !important;
+      ion-card-title {
+        --color: whitesmoke !important;
+      }
+    }
+    ion-card-content {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  }
+
 }
 
 #container strong {
