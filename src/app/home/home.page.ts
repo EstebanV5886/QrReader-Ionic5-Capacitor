@@ -17,4 +17,10 @@ export class HomePage {
     }).catch(error => console.error(error));
   }
 
+  deleteContent() {
+
+    this.qrResult = '';
+
+  }
+
 }

@@ -11,7 +11,7 @@ ion-content {
 
 #container {
   text-align: center;
-  
+
   position: absolute;
   left: 0;
   right: 0;
@@ -26,6 +26,7 @@ ion-content {
 
   ion-card{
     margin-top: 20px;
+    margin-bottom: 20px;
     ion-card-header {
       --background: #485A70 !important;
       ion-card-title {
