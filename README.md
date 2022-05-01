@@ -10,4 +10,14 @@ git clone https://github.com/EstebanV5886/QrReader-Ionic5-Capacitor.git
 
 npm i
 
+I recommend to delete the android folder before running the app.
+
+Then run ionic build
+
+npx cap add android
+
+ionic cap run android
+
+or if you want to make changes and see the changes instantly in the android app:
+
 ionic cap run android -l --external
