@@ -1,6 +1,6 @@
 {
   "appId": "com.qrcodexample.app",
-  "appName": "qrcodeExample",
+  "appName": "QRcode Reader",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

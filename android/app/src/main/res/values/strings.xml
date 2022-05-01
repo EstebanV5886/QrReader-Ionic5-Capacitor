@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">QRCode Example</string>
-    <string name="title_activity_main">QRCode Example</string>
+    <string name="app_name">QRcode Reader</string>
+    <string name="title_activity_main">QRcode Reader</string>
     <string name="package_name">com.qrcodexample.app</string>
     <string name="custom_url_scheme">com.qrcodexample.app</string>
 </resources>

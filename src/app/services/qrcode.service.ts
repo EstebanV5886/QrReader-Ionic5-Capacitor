@@ -11,10 +11,10 @@ export class QrcodeService {
   constructor() { }
 
   scanQr() {
-    return new Promise(async(resolve, reject) => {
-      let result = await CapacitorQRScanner.scan();
+    return new Promise(async (resolve, reject) => {
+      const result = await CapacitorQRScanner.scan();
       resolve(result);
-    })
+    });
   }
 
 }

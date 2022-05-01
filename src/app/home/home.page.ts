@@ -8,19 +8,34 @@ import { QrcodeService } from '../services/qrcode.service';
 export class HomePage {
 
   qrResult: any;
+  isUrl = false;
 
   constructor(private qrcode: QrcodeService) { }
 
   async scanQrCode() {
-    this.qrcode.scanQr().then((result: any) => {
+    try {
+      const result: any = await this.qrcode.scanQr();
       this.qrResult = result.code;
-    }).catch(error => console.error(error));
+      this.isUrl = await this.checkUrl(this.qrResult);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   deleteContent() {
 
     this.qrResult = '';
 
+  }
+
+  async checkUrl(text: string) {
+    let url: any;
+    try {
+      url = new URL(text);
+    } catch (_) {
+      return false;
+    }
+    return url.protocol === 'http:' || url.protocol === 'https:';
   }
 
 }

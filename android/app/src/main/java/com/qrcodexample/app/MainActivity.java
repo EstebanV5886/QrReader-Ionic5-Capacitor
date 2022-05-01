@@ -4,9 +4,10 @@ import android.os.Bundle;
 
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.Plugin;
-import de.golbros.capacitorqrscanner.CapacitorQRScanner;
 
 import java.util.ArrayList;
+
+import de.golbros.capacitorqrscanner.CapacitorQRScanner;
 
 public class MainActivity extends BridgeActivity {
   @Override
